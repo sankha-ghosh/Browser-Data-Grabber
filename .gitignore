@@ -1,0 +1,53 @@
+# Build directories
+build/
+!src/build/
+bin/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Qt-specific
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+*.qm
+*.pro.user
+*.pro.user.*
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+stub_temp.cpp
+
+# Output executables
+output.exe
+*.exe
+
+# Configuration files (may contain sensitive data)
+*.json
+
+# Downloaded fonts (will be fetched by build scripts)
+fonts/*.ttf
+fonts/*.otf
+fonts/liberation-fonts*.tar.gz
+
+# OS
+.DS_Store
+Thumbs.db
+
