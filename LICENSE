@@ -1,0 +1,51 @@
+MIT License with Additional Restrictions
+
+Copyright (c) 2025 Stealer Builder Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+ADDITIONAL RESTRICTIONS:
+
+1. AUTHORIZED USE ONLY: This software may only be used for authorized security
+   testing, penetration testing, red team engagements, security research, or
+   educational purposes where explicit written permission has been obtained
+   from the system owner.
+
+2. NO ILLEGAL USE: This software shall not be used for any illegal purpose,
+   including but not limited to unauthorized access to computer systems,
+   theft of data, or violation of privacy laws.
+
+3. COMPLIANCE: Users must comply with all applicable laws and regulations,
+   including but not limited to the Computer Fraud and Abuse Act (CFAA),
+   Computer Misuse Act, GDPR, and similar legislation in their jurisdiction.
+
+4. NO WARRANTY: The software is provided "as is" without warranty of any kind.
+
+5. LIABILITY: The authors and contributors are not responsible for any misuse,
+   damage, or illegal activity performed with this software. Users assume all
+   responsibility and liability for their use of this software.
+
+6. RESPONSIBLE DISCLOSURE: Any security vulnerabilities found in the software
+   itself must be responsibly disclosed to the maintainers before public
+   disclosure.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+BY USING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS LICENSE,
+UNDERSTAND IT, AND AGREE TO BE BOUND BY ITS TERMS AND CONDITIONS.
+
+
