@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RCC>
+    <qresource prefix="/fonts">
+        <file>fonts/LiberationSans-Regular.ttf</file>
+        <file>fonts/LiberationSans-Bold.ttf</file>
+        <file>fonts/LiberationMono-Regular.ttf</file>
+    </qresource>
+</RCC>
+
+
