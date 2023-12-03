@@ -217,3 +217,4 @@ bool StealerConfig::loadFromFile(const QString& filename) {
 }
 
 
+
