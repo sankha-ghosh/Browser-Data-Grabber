@@ -1160,3 +1160,4 @@ StealerConfig MainWindow::getConfigFromUI() const {
 }
 
 
+
