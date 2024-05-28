@@ -1166,3 +1166,4 @@ StealerConfig MainWindow::getConfigFromUI() const {
 
 // Commit 37 - 2024-05-10
 
+
