@@ -226,3 +226,4 @@ bool StealerConfig::loadFromFile(const QString& filename) {
 
 // Commit 82 - 2024-10-08
 
+
