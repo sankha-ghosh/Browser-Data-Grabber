@@ -78,3 +78,4 @@ echo "Run the application with:"
 echo "  ./bin/StealerBuilder"
 echo ""
 
+
